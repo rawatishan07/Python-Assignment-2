@@ -27,29 +27,16 @@ def calculate_median(marks_dict):
         return (scores[mid - 1] + scores[mid]) / 2
 
 def find_max_score(marks_dict):
-    """
-    Finds the highest score out of the marks.
-    Args: marks_dict (dict): Student names and marks
-    Returns: maximum score (int)
-    """
     if not marks_dict:
         return 0
     return max(marks_dict.values())
 
 def find_min_score(marks_dict):
-    """
-    Finds the lowest score out of the marks.
-    Args: marks_dict (dict): Student names and marks
-    Returns: minimum score (int)
-    """
     if not marks_dict:
         return 0
     return min(marks_dict.values())
 
 def main():
-    """
-    Main function for driving the entire logic
-    """
     # <--- TASK 2 --->
     while True:
         print("\n=== Gradebook Menu ===")
@@ -154,4 +141,5 @@ def main():
         print("\n" + "="*35 + "\n") 
 
 print("Welcome! This is a program to easily analyse student grades.")
+
 main()
